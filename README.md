@@ -1,6 +1,4 @@
 
-
-```markdown
 # VeritasNewsAI 🌍⚡  
 **AI-Powered Automated News Production**
 
