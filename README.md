@@ -1,5 +1,10 @@
+
+
+```markdown
 # VeritasNewsAI 🌍⚡  
 **AI-Powered Automated News Production**
+
+_Last Updated: February 2, 2025_
 
 VeritasNewsAI is an **AI-driven, fully automated news production system** designed to research, generate, and publish news stories across multiple platforms. Our goal is to revolutionize journalism through **trusted AI automation** while maintaining accuracy and neutrality.
 
@@ -25,7 +30,7 @@ pipeline = [
 
 ---
 
-## 🔥 Upcoming Features (Q4 2024+)  
+## 🔥 Upcoming Features (2025+)  
 
 ### 🚧 Next-Gen AI Automation  
 
@@ -46,7 +51,7 @@ pipeline += [
 
 ## 🗺️ Roadmap  
 
-### **Phase 1: Core Automation (Now - Dec 2024)**  
+### **Phase 1: Core Automation (Completed: Dec 2024)**  
 ```mermaid
 graph LR
     A[News Research] --> B[Script Generation]
@@ -54,7 +59,7 @@ graph LR
     C --> D[Basic Video Assembly]
 ```
 
-### **Phase 2: Full Automation (2025)**  
+### **Phase 2: Full Automation (2025 - Ongoing)**  
 ```mermaid
 graph LR
     A[AI News Research] --> B[Multi-Format Script Generation]
@@ -195,4 +200,6 @@ At **VeritasNewsAI**, we are **reshaping the news industry** with AI-driven auto
 *"Perfect is the enemy of truth." – Veritas Principle #3*  
 
 🚀 **Join us and be part of the future of AI-powered journalism!** 🎙️📡
-🚀🔥
+```
+
+
