@@ -1,0 +1,117 @@
+# settings.yaml
+
+# ----------------------------
+# News Aggregation Configuration
+# ----------------------------
+news_aggregation:
+  language: en                    # Language for news sources
+  country: US                     # Country code for news sources
+  update_interval: '60m'           # Corrected from integer to string ('60m' for 60 minutes)
+  max_results: 50                 # Maximum number of results to fetch from Google News
+  max_age_hours: 4                # Maximum age of news items in hours
+  hash_file: './data/seen_hashes.json'  # Path to store seen hashes for deduplication
+  output_dir: './data/news'       # Directory to save the generated scripts
+  rss_feeds:                      # List of RSS feed URLs to fetch news from
+    - 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml'
+    - 'http://feeds.bbci.co.uk/news/world/rss.xml'
+  reddit_subreddits:              # List of Reddit subreddits to fetch news from
+    - 'worldnews'
+    - 'news'
+  reddit_limit: 15                # Number of posts to fetch from each subreddit
+  reddit_user_agent: "AutoNewsChannel/2.0"  # User agent for Reddit API requests
+
+# ----------------------------
+# Script Generation Configuration
+# ----------------------------
+script_generation:
+  # API configurations
+  primary_llm: "deepseek-reasoner" 
+  fallback_llm: "gemini-2.0-flash"
+  max_retries: 3                       # Maximum number of retries for API calls
+  request_timeout: 30                  # Timeout for API requests in seconds
+  
+  # Script parameters
+  brand_name: "Veritas Lens AI"        # Your brand or channel name
+  min_duration: 180                    # Minimum script duration in seconds (3 minutes)
+  target_duration: 300                 # Target script duration in seconds (5 minutes)
+  max_duration: 300                    # Maximum script duration in seconds (5 minutes)
+  max_stories: 5                       # Maximum number of stories to include in the script
+  words_per_minute: 150                # Average words per minute for narration
+  engagement_hooks: 3                  # Number of engagement hooks to include
+  temperature: 0.7                     # Creativity parameter for LLM
+  top_p: 0.9                            # Nucleus sampling parameter for LLM
+  top_k: 40                             # Top-K sampling parameter for LLM
+  max_tokens: 1024                     # Maximum tokens for LLM responses
+  debug_mode: false                    # Enable or disable debug mode
+  fallback_enabled: true               # Enable or disable fallback LLM
+  streaming: true                      # Enable or disable streaming responses
+  
+  # Content settings
+  min_word_count: 250                  # Minimum word count for generated sections
+  max_word_count: 2400                 # Maximum word count for generated sections
+  jokes_per_script: 2                  # Number of jokes to include per script
+  news_items_per_script: 9             # Number of news items to include per script
+  
+  # Output configuration
+  output_dir: './data/narration'       # Directory to save the generated scripts
+  filename_format: "narration_%Y%m%d_%H%M.json"  # Filename format using timestamp
+  
+  # API endpoints
+  gemini:
+    model: "gemini-2.0-flash"
+    temperature: 0.7
+    max_tokens: 9000
+    top_p: 0.95
+    
+  deepseek:
+    model: "deepseek-reasoner"
+    temperature: 0.7
+    max_tokens: 3600
+  
+  # Script style settings
+  style:
+    tone: "professional yet engaging"    # Tone of the script
+    pacing: "dynamic"                     # Pacing of the script
+    transitions: "smooth and natural"     # Transitions between sections
+    emphasis: "strategic"                 # Emphasis on key points
+    
+  tone_settings:
+    professionalism: 0.8                  # Level of professionalism
+    engagement: 0.7                       # Level of engagement
+    humor: 0.3                            # Level of humor
+    
+  llm_models:
+    local_deepseek:
+      model_name: "deepseek-r1:7b"        # Model name for local LLM
+      temperature: 0.7
+      system_prompt: |
+        You are a professional news script writer. Format your response as a JSON object with the following sections:
+        {
+          "hook": "attention-grabbing opening",
+          "headlines": "brief overview of stories",
+          "main_story_1": "first detailed story",
+          "main_story_2": "second detailed story",
+          "main_story_3": "third detailed story",
+          "outro": "closing remarks"
+        }
+    groq_deepseek:
+      model_name: "llama-3.3-70b-versatile"  # Another local LLM option
+      temperature: 0.7
+      max_tokens: 1024
+    gemini:
+      model_name: "gemini-1.5-flash"         # Fallback LLM model
+      temperature: 0.7
+
+# ----------------------------
+# Voice Generation Configuration
+# ----------------------------
+voice_generation:
+  provider: "elevenlabs"                   # Voice generation provider
+  voice_id: "EXAVITQu4vr4xnSDxMaL"        # Specific voice ID from ElevenLabs
+  model_id: "eleven_multilingual_v2"      # Model ID for voice generation
+  stability: 0.71                          # Stability parameter for voice generation
+  similarity_boost: 0.5                    # Similarity boost parameter
+  output_dir: "data/speech"                # Directory to save generated speech
+  filename_format: "%Y%m%d_%H%M%S_speech.mp3"  # Filename format using timestamp
+  fallback_lang: "en"                      # Fallback language if primary fails
+  slow_speed: false # src/main.py          # Corrected inline comment

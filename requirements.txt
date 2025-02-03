@@ -1,0 +1,17 @@
+feedparser
+gnews
+PyYAML
+pytz
+praw
+tweepy
+python-dotenv
+google-cloud-aiplatform==1.35.0
+requests-cache==1.1.0
+textstat==0.7.3
+requests==2.31.0
+google.generativeai==0.3.1
+gTTS
+pywinauto
+pyautogui
+opencv
+pillow

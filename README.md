@@ -1,10 +1,7 @@
-
 # VeritasNewsAI 🌍⚡  
-**AI-Powered Automated News Production**
+**The Future of Automated News Production**
 
-_Last Updated: February 2, 2025_
-
-VeritasNewsAI is an **AI-driven, fully automated news production system** designed to research, generate, and publish news stories across multiple platforms. Our goal is to revolutionize journalism through **trusted AI automation** while maintaining accuracy and neutrality.
+Welcome to **VeritasNewsAI** – an advanced AI-driven news production platform that automates research, script generation, audio synthesis, and video production. Our goal is to **redefine modern news automation** with cutting-edge AI, ensuring fast, reliable, and unbiased content.
 
 ---
 
@@ -21,35 +18,35 @@ pipeline = [
 ]
 ```
 
-- **🔍 AI-Powered News Research** → Aggregates and analyzes news from 50+ trusted sources.
-- **📝 Automated Script Generation** → Produces clean, concise, and voice-ready scripts.
-- **🎙️ Text-to-Speech (TTS) Integration** → Generates professional-grade voiceovers.
-- **📽️ Basic Video Production** → Uses templates for initial video creation.
+- **Automated News Research** → 50+ trusted sources analyzed in real-time.  
+- **AI-Powered Script Generation** → Broadcast-ready, optimized for voice synthesis.  
+- **TTS & Audio Production** → Converts scripts into professional-grade voiceovers.  
+- **Basic Video Assembly** → Uses templates for preliminary video content.  
 
 ---
 
-## 🔥 Upcoming Features (2025+)  
+## 🔥 Upcoming Features (Q4 2024+)  
 
-### 🚧 Next-Gen AI Automation  
+### 🚧 Next-Gen Automation Pipeline  
 
 ```python
 # Upcoming Pipeline Extensions
 pipeline += [
-    VideoSceneGenerator(),  # Uses MiniMax API for AI scene generation
+    VideoSceneGenerator(),  # Uses MiniMax API for scene generation
     AutoVideoEditor(),      # PyAutoGUI + Movavi for automated editing
     YouTubeUploader()       # Seamless multi-platform publishing
 ]
 ```
 
-- **🎬 AI-Generated Videos** → Scene-by-scene generation with MiniMax API.
-- **📡 Multi-Platform Publishing** → Auto-uploads to YouTube, TikTok & news sites.
-- **📊 Performance Analytics** → AI-driven monitoring & audience insights.
+- **🎬 Video Automation** → AI-powered scene-by-scene video generation.  
+- **📡 Multi-Platform Publishing** → Automates YouTube & social media distribution.  
+- **📊 Performance Analytics** → Monitors reach & engagement across platforms.  
 
 ---
 
 ## 🗺️ Roadmap  
 
-### **Phase 1: Core Automation (Completed: Dec 2024)**  
+### **Phase 1: Core Automation (Now - Dec 2024)**  
 ```mermaid
 graph LR
     A[News Research] --> B[Script Generation]
@@ -57,7 +54,7 @@ graph LR
     C --> D[Basic Video Assembly]
 ```
 
-### **Phase 2: Full Automation (2025 - Ongoing)**  
+### **Phase 2: Full Automation (2025)**  
 ```mermaid
 graph LR
     A[AI News Research] --> B[Multi-Format Script Generation]
@@ -67,68 +64,12 @@ graph LR
     E --> F[Performance Analytics]
 ```
 
-### **Phase 3: Decentralized News Network (2026+)**  
+### **Phase 3: Decentralized Network (2026+)**  
 ```mermaid
 graph TD
     A[User Node] -->|Shares| B[Truth Ledger]
     B -->|Verifies| C[Community Feedback]
     C -->|Feeds Data| D[AI Model Training]
-```
-
----
-
-## 🧠 AI Models & Infrastructure  
-
-We leverage **DeepSeek R1** as our primary **local AI model** running on OLLAMA.  
-This ensures **privacy, security, and full control** over the LLM-based news generation.  
-
-```ini
-# LLM Provider
-LLM_PROVIDER=ollama
-OLLAMA_MODEL=llama2
-```
-
-Other APIs & services include:
-- **DeepSeek R1** (local LLM) → Runs offline for secure AI processing.
-- **MiniMax API** → For automated video scene generation.
-- **ElevenLabs** → High-quality AI-generated voice synthesis.
-- **Google AI** → Generative AI capabilities for additional processing.
-- **Reddit & Twitter APIs** → News trend tracking.
-
----
-
-## 📦 Dependencies  
-
-To ensure full functionality, install the following dependencies:
-
-```ini
-# API Keys
-DEEPSEEK_API_KEY=your_deepseek_key_here
-MINIMAX_API_KEY=your_minimax_key_here
-ELEVENLABS_KEY=your_elevenlabs_key_here
-GOOGLE_API_KEY=your_google_key_here
-GOOGLE_CLOUD_PROJECT=your_googlecloudproject_key_here
-REDDIT_CLIENT_ID=your_redditclient_id_here
-REDDIT_CLIENT_SECRET=your_redditsecret_key_here
-```
-
-Required Python libraries:
-
-```ini
-feedparser
-gnews
-PyYAML
-pytz
-praw
-tweepy
-python-dotenv
-google-cloud-aiplatform==1.35.0
-requests-cache==1.1.0
-textstat==0.7.3
-requests==2.31.0
-google.generativeai==0.3.1
-gTTS
-tenacity
 ```
 
 ---
@@ -197,7 +138,6 @@ At **VeritasNewsAI**, we are **reshaping the news industry** with AI-driven auto
 
 *"Perfect is the enemy of truth." – Veritas Principle #3*  
 
-🚀 **Join us and be part of the future of AI-powered journalism!** 🎙️📡
-```
+**Join us and be part of the future of AI-powered journalism!** 🚀🎙️📡
 
-
+🚀🔥
